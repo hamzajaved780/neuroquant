@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"classes":["info-table"],"data":["./myproject-fpga"],"name":"Project Name"},
+{"data":["Arria10, 10AX115U1F45I1SG"],"name":"Target Family, Device"},
+{"data":["19.1.0 Build 240"],"name":"i++ Version"},
+{"data":["19.1.0 Build 240 Pro"],"name":"Quartus Version"},
+{"data":["i++ myproject_test.cpp firmware/myproject.cpp -v --fpc --fp-relaxed -march=10AX115U1F45I1SG -o myproject-fpga --clock 5ns"],"name":"Command"},
+{"data":["Wed Aug  7 19:09:30 2019"],"name":"Reports Generated At"}
+]}

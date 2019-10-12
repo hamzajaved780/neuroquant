@@ -1,0 +1,689 @@
+{
+  "nodes":
+  [
+    {
+      "name":"myproject"
+      , "id":4253148936
+      , "type":"component"
+      , "children":
+      [
+        {
+          "name":"Local Memory"
+          , "id":1
+          , "type":"memtype"
+          , "children":
+          [
+            {
+              "name":"b2"
+              , "id":2
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"6"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":6
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"exp_table"
+              , "id":3
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"1"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":1
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"invert_table"
+              , "id":4
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"1"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":1
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"layer9_out"
+              , "id":5
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"86"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":86
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"input_1"
+              , "id":6
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"27"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":27
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"w2"
+              , "id":7
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/weights/w2.h"
+                          , "line":"6"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/weights/w2.h"
+                    , "line":6
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"w4"
+              , "id":8
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/weights/w4.h"
+                          , "line":"6"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/weights/w4.h"
+                    , "line":6
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"b4"
+              , "id":9
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/weights/b4.h"
+                          , "line":"6"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/weights/b4.h"
+                    , "line":6
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"w6"
+              , "id":10
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/weights/w6.h"
+                          , "line":"6"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/weights/w6.h"
+                    , "line":6
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"b6"
+              , "id":11
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/weights/b6.h"
+                          , "line":"6"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/weights/b6.h"
+                    , "line":6
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"w8"
+              , "id":12
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/weights/w8.h"
+                          , "line":"6"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/weights/w8.h"
+                    , "line":6
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"b8"
+              , "id":13
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/weights/b8.h"
+                          , "line":"6"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/weights/b8.h"
+                    , "line":6
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"layer2_out"
+              , "id":14
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"65"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":65
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"layer3_out"
+              , "id":15
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"68"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":68
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"layer4_out"
+              , "id":16
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"71"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":71
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"layer5_out"
+              , "id":17
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"74"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":74
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"layer6_out"
+              , "id":18
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"77"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":77
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"layer7_out"
+              , "id":19
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"80"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":80
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+            , {
+              "name":"layer8_out"
+              , "id":20
+              , "details":
+              [
+                {
+                  "type":"table"
+                  , "Declared at":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"%L"
+                      , "links":
+                      [
+                        {
+                          "filename":"firmware/myproject.cpp"
+                          , "line":"83"
+                        }
+                      ]
+                    }
+                  ]
+                  , "Additional information":"This variable is carried through the pipeline in registers (rather than being stored in RAM)"
+                }
+              ]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"firmware/myproject.cpp"
+                    , "line":83
+                  }
+                ]
+              ]
+              , "type":"reg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  , "links":
+  [
+  ]
+}

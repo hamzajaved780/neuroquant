@@ -1,0 +1,116 @@
+{
+  "nodes":
+  [
+    {
+      "name":"myproject"
+      , "id":4253148936
+      , "type":"component"
+      , "children":
+      [
+        {
+          "name":"Stream Write"
+          , "id":4258686872
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"myproject.B1.start"
+              , "Width":"80 bits"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"firmware/myproject.cpp"
+                , "line":90
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+        , {
+          "name":"Stream Read"
+          , "id":4256007192
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Basic Block":"myproject.B1.start"
+              , "Width":"256 bits"
+              , "Depth":"0"
+              , "Stall-free":"No"
+              , "Latency":"0"
+            }
+          ]
+          , "debug":
+          [
+            [
+              {
+                "filename":"firmware/myproject.cpp"
+                , "line":26
+              }
+            ]
+          ]
+          , "type":"inst"
+        }
+      ]
+    }
+    , {
+      "name":"return.myproject"
+      , "id":4253145656
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"80 bits"
+          , "Depth":"0"
+          , "Ready Latency":"0"
+          , "Bits per Symbol":"80 bits"
+          , "Uses Packets":"No"
+          , "Uses Ready":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+    , {
+      "name":"do.myproject"
+      , "id":4253148728
+      , "details":
+      [
+        {
+          "type":"table"
+          , "Width":"256 bits"
+          , "Depth":"0"
+          , "Reday Latency":"0"
+          , "Bits per Symbol":"256 bits"
+          , "Uses Packets":"No"
+          , "Uses Valid":"Yes"
+          , "Uses Empty":"No"
+          , "First symbol in high order bits":"No"
+        }
+      ]
+      , "type":"stream"
+    }
+  ]
+  , "links":
+  [
+    {
+      "from":4258686872
+      , "to":4253145656
+    }
+    , {
+      "from":4253148728
+      , "to":4256007192
+    }
+    , {
+      "from":4256007192
+      , "to":4258686872
+    }
+  ]
+}

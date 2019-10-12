@@ -1,0 +1,47 @@
+{
+  "27239472":
+  {
+    "nodes":
+    [
+      {
+        "name":"Entry"
+        , "id":79131312
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Entry"
+            , "Cluster Type":"Stall-Enable"
+          }
+        ]
+        , "type":"inst"
+      }
+      , {
+        "name":"Exit"
+        , "id":79138528
+        , "details":
+        [
+          {
+            "type":"table"
+            , "Instruction":"Cluster Exit"
+            , "Cluster Type":"Stall-Enable"
+          }
+        ]
+        , "type":"inst"
+      }
+    ]
+    , "links":
+    [
+    ]
+  }
+  , "27561680":
+  {
+    "nodes":
+    [
+    ]
+    , "links":
+    [
+    ]
+    , "message":"Graph contains too many nodes to render."
+  }
+}

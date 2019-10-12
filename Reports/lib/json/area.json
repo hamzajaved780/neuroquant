@@ -1,0 +1,1433 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "MLABs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [43.4856, 41.5936, 7.69429, 0.110579, 33.7286]
+  , "total":
+  [355176, 131480, 3, 512, 10]
+  , "name":"System"
+  , "max_resources":
+  [854400, 1708800, 2713, 1518, 42720]
+  , "children":
+  [
+    {
+      "name":"myproject"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [43.4856, 41.5936, 7.69429, 0.110579, 33.7286]
+      , "total_kernel_resources":
+      [355176, 131480, 3, 511.5, 10]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+        , {
+          "type":"brief"
+          , "text":"1 compute unit."
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Component call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 256 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"256b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Component return"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 80 bits wide with a buffer size of 0 elements."
+            }
+            , {
+              "type":"brief"
+              , "text":"80b wide with 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"myproject.B1.start"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [2154, 92791, 0, 0, 10]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Live values and control logic"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [2154, 92791, 0, 0, 10]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [7, 7, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Loop-carried dependencies"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"myproject.cpp:26"
+                  , "type":"resource"
+                  , "data":
+                  [7, 7, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":26
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [9, 7, 3, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"brief"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall"
+                }
+                , {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"myproject.cpp:26"
+                  , "type":"resource"
+                  , "data":
+                  [3, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":26
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:66 > nnet_dense.h:71 > \nac_fixed.h:603 > ac_int.h:646"
+                  , "type":"resource"
+                  , "data":
+                  [2704.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":66
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":71
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":603
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":646
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":178
+                      , "data":
+                      [2704.5, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:66 > nnet_dense.h:71 > \nac_fixed.h:603 > ac_int.h:647"
+                  , "type":"resource"
+                  , "data":
+                  [67877.5, 12527, 0, 189, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":66
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":71
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":603
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":647
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":178
+                      , "data":
+                      [2704.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":876
+                      , "data":
+                      [65077, 12527, 0, 189, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [96, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:66 > nnet_dense.h:72 > \nac_fixed.h:656 > ac_fixed.h:612 > \nac_int.h:652"
+                  , "type":"resource"
+                  , "data":
+                  [16964, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":66
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":656
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":612
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":652
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":999
+                      , "data":
+                      [16964, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:69 > nnet_activation.h:76"
+                  , "type":"resource"
+                  , "data":
+                  [256, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":69
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":76
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Select"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [256, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:69 > nnet_activation.h:76 > \nac_fixed.h:1349 > ac_fixed.h:896 > \nac_int.h:820"
+                  , "type":"resource"
+                  , "data":
+                  [1216, 64, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":69
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":1349
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":896
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":820
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [1216, 64, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:69 > nnet_activation.h:77"
+                  , "type":"resource"
+                  , "data":
+                  [256, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":69
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":77
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Select"
+                      , "type":"resource"
+                      , "count":64
+                      , "data":
+                      [256, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:72 > nnet_dense.h:71 > \nac_fixed.h:603 > ac_int.h:646"
+                  , "type":"resource"
+                  , "data":
+                  [5528.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":71
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":603
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":646
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":571
+                      , "data":
+                      [5528.5, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:72 > nnet_dense.h:71 > \nac_fixed.h:603 > ac_int.h:647"
+                  , "type":"resource"
+                  , "data":
+                  [117732, 16314, 0, 186, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":71
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":603
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":647
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":571
+                      , "data":
+                      [5528.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":1577
+                      , "data":
+                      [112076, 16314, 0, 186, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":4
+                      , "data":
+                      [128, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:72 > nnet_dense.h:72 > \nac_fixed.h:656 > ac_fixed.h:612 > \nac_int.h:652"
+                  , "type":"resource"
+                  , "data":
+                  [33611, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":656
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":612
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":652
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":2038
+                      , "data":
+                      [33611, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:75 > nnet_activation.h:76"
+                  , "type":"resource"
+                  , "data":
+                  [128, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":75
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":76
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Select"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [128, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:75 > nnet_activation.h:76 > \nac_fixed.h:1349 > ac_fixed.h:896 > \nac_int.h:820"
+                  , "type":"resource"
+                  , "data":
+                  [608, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":75
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":1349
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":896
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":820
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [608, 32, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:75 > nnet_activation.h:77"
+                  , "type":"resource"
+                  , "data":
+                  [128, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":75
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":77
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Select"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [128, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:78 > nnet_dense.h:71 > \nac_fixed.h:603 > ac_int.h:646"
+                  , "type":"resource"
+                  , "data":
+                  [2361, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":78
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":71
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":603
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":646
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":242
+                      , "data":
+                      [2361, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:78 > nnet_dense.h:71 > \nac_fixed.h:603 > ac_int.h:647"
+                  , "type":"resource"
+                  , "data":
+                  [60792, 8426, 0, 113, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":78
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":71
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":603
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":647
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":242
+                      , "data":
+                      [2361, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":826
+                      , "data":
+                      [58335, 8426, 0, 113, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [96, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:78 > nnet_dense.h:72 > \nac_fixed.h:656 > ac_fixed.h:612 > \nac_int.h:652"
+                  , "type":"resource"
+                  , "data":
+                  [16953, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":78
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":656
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":612
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":652
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1018
+                      , "data":
+                      [16953, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:81 > nnet_activation.h:76"
+                  , "type":"resource"
+                  , "data":
+                  [128, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":81
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":76
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Select"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [128, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:81 > nnet_activation.h:76 > \nac_fixed.h:1349 > ac_fixed.h:896 > \nac_int.h:820"
+                  , "type":"resource"
+                  , "data":
+                  [608, 32, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":81
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":76
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":1349
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":896
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":820
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [608, 32, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:81 > nnet_activation.h:77"
+                  , "type":"resource"
+                  , "data":
+                  [128, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":81
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":77
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Select"
+                      , "type":"resource"
+                      , "count":32
+                      , "data":
+                      [128, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:84 > nnet_dense.h:71 > \nac_fixed.h:603 > ac_int.h:646"
+                  , "type":"resource"
+                  , "data":
+                  [406.5, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":71
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":603
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":646
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":42
+                      , "data":
+                      [406.5, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:84 > nnet_dense.h:71 > \nac_fixed.h:603 > ac_int.h:647"
+                  , "type":"resource"
+                  , "data":
+                  [8684.5, 1038, 0, 23.5, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":71
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":603
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":647
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":42
+                      , "data":
+                      [406.5, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Multiply"
+                      , "type":"resource"
+                      , "count":133
+                      , "data":
+                      [8278, 1038, 0, 23.5, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:84 > nnet_dense.h:72 > \nac_fixed.h:656 > ac_fixed.h:612 > \nac_int.h:652"
+                  , "type":"resource"
+                  , "data":
+                  [2671, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":84
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_dense.h"
+                        , "line":72
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":656
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":612
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":652
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":160
+                      , "data":
+                      [2671, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:87 > nnet_activation.h:227 > \nac_fixed.h:626 > ac_int.h:657"
+                  , "type":"resource"
+                  , "data":
+                  [340, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":87
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":227
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":626
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":657
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":20
+                      , "data":
+                      [340, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:87 > nnet_activation.h:229"
+                  , "type":"resource"
+                  , "data":
+                  [520, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":87
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":229
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":20
+                      , "data":
+                      [520, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:87 > nnet_activation.h:231"
+                  , "type":"resource"
+                  , "data":
+                  [960, 20, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":87
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":231
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":20
+                      , "data":
+                      [700, 20, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":20
+                      , "data":
+                      [260, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:87 > nnet_activation.h:232"
+                  , "type":"resource"
+                  , "data":
+                  [800, 20, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":87
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":232
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":20
+                      , "data":
+                      [700, 20, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":20
+                      , "data":
+                      [100, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:87 > nnet_activation.h:234"
+                  , "type":"resource"
+                  , "data":
+                  [5992, 20, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":87
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":234
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Select"
+                      , "type":"resource"
+                      , "count":18
+                      , "data":
+                      [144, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":20
+                      , "data":
+                      [700, 20, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.fpga.case"
+                      , "type":"resource"
+                      , "count":558
+                      , "data":
+                      [5148, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:87 > nnet_activation.h:237 > \nac_fixed.h:656 > ac_fixed.h:612 > \nac_int.h:652"
+                  , "type":"resource"
+                  , "data":
+                  [894, 0, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":87
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":237
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":656
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_fixed.h"
+                        , "line":612
+                      }
+                      , {
+                        "filename":"/opt/intelFPGA_pro/19.1/hls/include/HLS/ac_int.h"
+                        , "line":652
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"16-bit Integer Add"
+                      , "type":"resource"
+                      , "count":18
+                      , "data":
+                      [306, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"16-bit Select"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [16, 0, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.fpga.case"
+                      , "type":"resource"
+                      , "count":62
+                      , "data":
+                      [572, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:87 > nnet_activation.h:240"
+                  , "type":"resource"
+                  , "data":
+                  [245, 5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":87
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":240
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [175, 5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [70, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:87 > nnet_activation.h:241"
+                  , "type":"resource"
+                  , "data":
+                  [200, 5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":87
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":241
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [175, 5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Select"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [25, 0, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:87 > nnet_activation.h:243"
+                  , "type":"resource"
+                  , "data":
+                  [3307, 170, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":87
+                      }
+                      , {
+                        "filename":"firmware/nnet_utils/nnet_activation.h"
+                        , "line":243
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"1-bit Or"
+                      , "type":"resource"
+                      , "count":30
+                      , "data":
+                      [30, 20, 0, 0, 0]
+                    }
+                    , {
+                      "name":"16-bit Select"
+                      , "type":"resource"
+                      , "count":30
+                      , "data":
+                      [262, 80, 0, 0, 0]
+                    }
+                    , {
+                      "name":"32-bit Integer Compare"
+                      , "type":"resource"
+                      , "count":60
+                      , "data":
+                      [340, 15, 0, 0, 0]
+                    }
+                    , {
+                      "name":"llvm.fpga.case"
+                      , "type":"resource"
+                      , "count":295
+                      , "data":
+                      [2675, 55, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"myproject.cpp:90"
+                  , "type":"resource"
+                  , "data":
+                  [3, 2, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"firmware/myproject.cpp"
+                        , "line":90
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Stream Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 2, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
