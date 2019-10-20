@@ -11,4 +11,6 @@ Built using : https://www.nengo.ai/nengo-loihi/
 >~~~~
 To execute code on the remote Loihi Superhost please configure your machine using the following [instruction](https://www.nengo.ai/nengo-loihi/installation.html). After a succesfull installation run the code on Superhost by adding SLURM=1 to the command:
 
-`SLURM=1 python Neuromorphic_TQP.py`
+>~~~~
+>SLURM=1 python Neuromorphic_TQP.py
+>~~~~
