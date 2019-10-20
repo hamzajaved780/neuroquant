@@ -1,0 +1,7 @@
+nengo
+numpy
+nengo_dl
+nengo_loihi
+tensorflow
+matplotlib
+sklearn
