@@ -28,12 +28,7 @@ component outputdat myproject(
     //hls-fpga-machine-learning insert weights
     #include "weights/w2.h"
     #include "weights/b2.h"
-    #include "weights/w4.h"
-    #include "weights/b4.h"
-    #include "weights/w6.h"
-    #include "weights/b6.h"
-    #include "weights/w8.h"
-    #include "weights/b8.h"
+
 
 
     // ****************************************
@@ -51,20 +46,8 @@ component outputdat myproject(
     hls_register layer4_t layer4_out[N_LAYER_4];
     nnet::dense<layer3_t, layer4_t, config4>(layer3_out, layer4_out, w4, b4);
 
-    hls_register layer5_t layer5_out[N_LAYER_4];
-    nnet::relu<layer4_t, layer5_t, relu_config5>(layer4_out, layer5_out);
+    hls_register outputdat layer5_out;
+    nnet::tanh<layer4_t, result_t, softmax_config9>(layer4_out, layer5_out.data);
 
-    hls_register layer6_t layer6_out[N_LAYER_6];
-    nnet::dense<layer5_t, layer6_t, config6>(layer5_out, layer6_out, w6, b6);
-
-    hls_register layer7_t layer7_out[N_LAYER_6];
-    nnet::relu<layer6_t, layer7_t, relu_config7>(layer6_out, layer7_out);
-
-    hls_register layer8_t layer8_out[N_LAYER_8];
-    nnet::dense<layer7_t, layer8_t, config8>(layer7_out, layer8_out, w8, b8);
-
-    hls_register outputdat layer9_out;
-    nnet::softmax<layer8_t, result_t, softmax_config9>(layer8_out, layer9_out.data);
-
-    return layer9_out;
+    return layer5_out;
 }
