@@ -8,5 +8,5 @@ Built using : https://github.com/hls-fpga-machine-learning/hls4ml
 * **Muhammad Reza Noormandipur** - *Theory*
 * **Martin Tat** - *Theory*
 * **Raghav Kansal** - *Theory, High Level Implementation*
-* **Hamza Javed** - *FPGA Implementation*
+* **Hamza Javed** - *FPGA Emulation*
 * **Bartek Borzyszkowski** - *Neuromorphic Chip Implementation*
