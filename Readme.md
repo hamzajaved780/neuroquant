@@ -3,3 +3,10 @@
 Implementation Files for emulation of a topological quantum processor on Intel Arria 10 GX.
 
 Built using : https://github.com/hls-fpga-machine-learning/hls4ml
+
+## Contributors
+* **Muhammad Reza Noormandipur** - *Theory*
+* **Martin Tat** - *Theory*
+* **Raghav Kansal** - *Theory, High Level Implementation*
+* **Muhammad Reza Noormandipur** - *FPGA Implementation*
+* **Muhammad Reza Noormandipur** - *Neuromorphic Chip Implementation*
