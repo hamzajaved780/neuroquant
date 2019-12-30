@@ -5,7 +5,7 @@ Implementation Files for emulation of a topological quantum processor on Intel A
 Built using : https://github.com/hls-fpga-machine-learning/hls4ml
 
 ## Contributors
-* **Muhammad Reza Noormandipur** - *Theory*
+* **Mohammadreza Noormandipour** - *Theory*
 * **Martin Tat** - *Theory*
 * **Raghav Kansal** - *Theory, High Level Implementation*
 * **Hamza Javed** - *FPGA Emulation*
